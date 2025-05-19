@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom, #6b21a8, #000);
+      background: linear-gradient(to bottom, #000000, #6b21a8);
       height: 100vh;
       overflow: hidden;
-      animation: fadeBackground 10s ease-in-out infinite alternate;
-    }
-
-    @keyframes fadeBackground {
-      from { background: linear-gradient(to bottom, #6b21a8, #000); }
-      to { background: linear-gradient(to bottom, #000, #6b21a8); }
+      font-family: 'Inter', sans-serif;
     }
 
     .dot {
@@ -33,16 +29,16 @@
     }
   </style>
 </head>
-<body class="text-white font-sans relative">
+<body class="text-white relative">
 
-  <div class="w-full bg-black bg-opacity-50 p-4 flex justify-center space-x-6 fixed top-0 z-10">
+  <div class="w-full bg-black bg-opacity-80 p-4 flex justify-center space-x-6 fixed top-0 z-10 text-lg font-semibold">
     <button onclick="showTab('siege')" class="hover:text-purple-400">Siege</button>
     <button onclick="showTab('fortnite')" class="hover:text-purple-400">Fortnite</button>
     <button onclick="showTab('brawl')" class="hover:text-purple-400">Brawl Stars</button>
     <button onclick="showTab('minecraft')" class="hover:text-purple-400">Minecraft</button>
   </div>
 
-  <div id="content" class="mt-20 p-6 text-center text-lg max-w-xl mx-auto">
+  <div id="content" class="mt-24 p-6 text-center text-lg max-w-xl mx-auto">
     <p>Select a tab to explore cool stuff for each game!</p>
   </div>
 
